@@ -1,0 +1,109 @@
+.Photos{
+    width: 100%;
+    height: 650px;
+    margin-top: 100px;
+    background-color: #1E191E;
+    padding: 0;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.Photos-text h1{
+    color: #EC4814;
+    font-size: 20px;
+    padding-left: 100px;
+    padding-top: 120px;
+}
+.Photos-text h2{
+    color: white;
+    font-size: 40px;
+    padding-left: 100px;
+    padding-top: 10px
+}
+.arrow-container{
+    display: flex;
+    color: orangered;
+    padding-top: 150px;
+    padding-right: 100px;
+    gap: 40px;
+}
+.images-container{
+    display: flex;
+    gap: 30px;
+    margin-top: -400px;
+}
+.images-container img{
+    height: 400px;
+    width: 300px;
+}
+  /* Wrapper for the image slider */
+.image-slider-wrapper {
+    width: 100%;             /* Full width of the parent container */
+           /* Hide the overflowed images */
+    position: relative;
+            /* Adjust top margin if needed */
+  }
+  
+  /* Image slider container */
+  .image-slider {
+    display: flex;           /* Flexbox to place images in a row */
+    justify-content: center; /* Center the images horizontally */
+    align-items: center;     /* Align items vertically */
+    width: 100%;
+    height: 300px;           /* Adjust height of the image slider */
+  /* Dark background color */
+  }
+  
+  /* Container for the images to slide */
+  .images-container {
+    display: flex;           /* Flexbox to arrange images in a row */
+    width: 400%;             /* 100% per image, so 4 images will occupy 400% */
+    animation: slide 18s linear infinite; /* Sliding animation */
+  }
+  
+  .images-container img {
+    width: 25%;              /* Each image takes 25% of the total width */
+    height: auto;            /* Keep the aspect ratio */
+    object-fit: cover;       /* Ensure images cover the container without distortion */
+  }
+  
+  /* Keyframe animation for infinite sliding images */
+  @keyframes slide {
+    0% {
+      transform: translateX(0); /* Start from the initial position */
+    }
+    25% {
+      transform: translateX(-25%); /* Move images to the left */
+    }
+    50% {
+      transform: translateX(-50%); /* Move further left */
+    }
+    75% {
+      transform: translateX(-75%); /* Move further left */
+    }
+    100% {
+      transform: translateX(-100%); /* Move all images off-screen */
+    }
+  }
+  @media (max-width: 800px){
+    .images-container img{
+      width: 75%;
+      
+    }
+    .Photos-text h1{
+      font-size: 20px;
+    }
+
+  }
+  @media (max-width: 650px){
+    .Photos-text h2{
+      font-size: 30px;
+    }
+
+  }
+  @media (max-width: 650px){
+    .Photos-text h2{
+      font-size: 25px;
+    }
+  }

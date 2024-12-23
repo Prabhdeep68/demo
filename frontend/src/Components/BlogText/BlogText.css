@@ -1,0 +1,13 @@
+.BlogText{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.BlogText h1{
+    color: #EC4814;
+    font-size: 20px;
+}
+.BlogText h2{
+    color: #1E191E;
+    font-size: 40px;
+}

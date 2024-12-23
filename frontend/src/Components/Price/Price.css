@@ -1,0 +1,11 @@
+.Price{
+    text-align: center;
+}
+.Price h1{
+    font-size: 20px;
+    color: #EC4814;
+}
+.Price h2{
+    color: #0E191E;
+    font-size: 40px;
+}

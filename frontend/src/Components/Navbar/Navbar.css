@@ -1,0 +1,214 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  z-index: 10000;
+  background-color: white;
+  width: 100vw;
+}
+
+.logo {
+  max-width: 150px; /* Adjust logo size */
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding-bottom: 0;
+  
+  /* By default, the navbar menu will always be shown on screens above 1100px */
+}
+
+.navbar-menu li  {
+  display: block;
+  font-size: 18px;
+  color: #0E191E;
+}
+
+.navbar-menu li:hover {
+  border-bottom: 1px solid #0E191E;
+  cursor: pointer;
+}
+
+.mobile-menu-icon {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.mobile-menu-icon .bar {
+  width: 30px;
+  height: 4px;
+  background-color: #0E191E;
+  border-radius: 5px;
+}
+
+/* Mobile menu styles (hidden by default) */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Initially hidden on the right side */
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  padding-top: 60px;
+  z-index: 1000;
+  transition: right 0.3s ease;
+}
+
+.mobile-menu.active {
+  right: 0; /* Slide in when active */
+}
+
+.close-btn {
+  font-size: 36px;
+  color: #0E191E;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  margin: 0;
+}
+
+.mobile-menu li {
+  font-size: 22px;
+  color: #0E191E;
+}
+
+.mobile-menu li a {
+  text-decoration: none;
+  color: #0E191E;
+}
+
+.mobile-menu li:hover {
+  background-color: #EC4814;
+  color: white;
+  padding-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.menu-btns {
+  width: 300px;
+  height: 57px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu-btns button {
+  
+  height: 60px;
+  font-size: 16px;
+  border-radius: 25px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-btns .menu-btn1 {
+  background-color: white;
+  color: #0E191E;
+  border: 1px solid #EC4814;
+}
+
+.menu-btns .menu-btn1:hover {
+  background-color: #EC4814;
+  color: white;
+}
+
+.menu-btns .menu-btn2 {
+  background-color: #EC4814;
+  color: white;
+}
+
+.menu-btns .menu-btn2:hover {
+  background-color: white;
+  color: #EC4814;
+  border: 1px solid #EC4814;
+}
+.nav-ele{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+/* Media Query for responsive design for SMALLER SCREENS (less than 1100px) */
+@media (max-width: 1100px) {
+  /* Show mobile menu icon on screens less than 1100px wide */
+  .mobile-menu-icon {
+    display: flex;
+  }
+
+  /* Make the navbar menu hidden for smaller screens */
+  .navbar-menu {
+    display: none;
+  }
+  .nav-ele{
+    display: none;
+  }
+
+  /* Show the mobile menu when active */
+  .mobile-menu.active {
+    display: block;
+  }
+
+  /* Adjust buttons for smaller screens */
+  .menu-btns {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* For even smaller screens (less than 600px) */
+@media (max-width: 600px) {
+  .menu-btns button {
+    width: 80%;
+    margin: 10px 0;
+  }
+}
+
+/* For screens between 600px and 1100px */
+@media (min-width: 601px) and (max-width: 1100px) {
+  .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Reduced gap between menu items */
+  }
+
+  .navbar-menu li {
+    font-size: 16px;
+  }
+
+  .navbar-menu li a {
+    padding: 10px 0;
+  }
+}
+.menu-btn1 {
+  width: 100px;
+  height: 60px;
+}
+.menu-btn2 {
+  width: 100px;
+  height: 60px;
+}
+

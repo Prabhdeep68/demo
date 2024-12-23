@@ -1,0 +1,110 @@
+
+.imagee img{
+    height: 347px;
+    width: 100%;
+    margin-top: 70px;
+}
+.image h1{
+    
+    font-size: 55px;
+    color: white;
+}
+.home-contact{
+    display: flex;
+    
+    gap: 60px;
+}
+.home-contact p{
+    color:#EC4814;
+    font-weight: 500;
+    padding-top: 30px;
+}
+.image{
+    margin-top: -250px;
+    margin-left: 40px;
+}
+.contact-text{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 250px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+.contact-text1 h1{
+    font-size: 20px;
+    color: #EC4814;
+    margin-bottom: 20px;
+}
+.contact-text1 h2{
+    font-size: 40px;
+    color: #0E191E;
+}
+.Contact-para{
+    font-size: 18px;
+    color: #5b5b5b;
+}
+.form{
+    margin-top: 70px;
+    display: flex;
+    gap: 200px;
+    background-color: beige;
+    height: auto;
+    border-radius: 30px;
+}
+.form input{
+    width: 262px;
+    height: 60px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+}
+.name-email{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+.Number-Subject{
+    display:flex ;
+    gap: 50px;
+    margin-left: 50px;
+}
+.textarea textarea{
+    width: 574px;
+    border: none;
+    border-radius: 25px ;
+    margin-left: 50px;
+    margin-top: 30px;
+
+}
+.form button{
+    width: 555px;
+    height: 57px;
+    background-color: #EC4814;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    font-size: 16px;
+}
+.address{
+    margin-top: 50px;
+}
+.address h1{
+    font-size: 24px;
+}
+.address p{
+    font-size: 16px;
+}
+.email{
+    margin-bottom: 40px;
+}
+.phone{
+    margin-bottom: 40px;
+}

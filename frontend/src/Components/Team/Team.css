@@ -1,0 +1,105 @@
+.team{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; /* Vertical stack (default for mobile view) */
+    
+  }
+ 
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    
+    
+  
+    /* Adds space between components */
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Allows wrapping when the screen is small */
+  }
+  
+
+  .row .Team:last-child {
+    margin-right: 0;
+  }
+  
+
+.Team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: beige;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    max-width: 100%;
+    flex: 1;
+    
+    margin: 10px;
+    box-sizing: border-box;
+  }
+  
+  .left {
+    flex: 1;
+    padding-right: 20px;
+    width: 250px;
+  }
+  .left p{
+    margin-top:40px ;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar {
+    height: 10px;
+    background-color:#ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%; /* Ensure it takes full width */
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #EC4814; /* Green color */
+    border-radius: 5px;
+    transition: width 0.3s ease; /* Smooth transition */
+  }
+  
+  .social-icons i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #555;
+  }
+  
+  .right img {
+    max-width: 340px;
+    
+    border-radius: 5px;
+  }
+  .social-icons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    
+  }
+  @media (max-width: 1120px){
+    .row{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @media (max-width: 704px){
+    .Team{
+      max-width: 75%;
+    }
+    .right img {
+      max-width: 240px;
+      
+    }
+  }

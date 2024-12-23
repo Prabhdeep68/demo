@@ -1,0 +1,22 @@
+.team-text{
+    text-align: center;
+    padding-top: 70px;
+}
+.team-text h1{
+    color: #EC4814;
+    font-size: 20px;
+}
+.team-text h2{
+    color: #1E191E;
+    font-size: 40px;
+}
+@media (max-width: 1100px){
+    .team-text{
+        margin-top: 700px;
+    }
+}
+@media (max-width: 704px){
+    .team-text{
+        margin-top: 800px;
+    }
+}

@@ -1,0 +1,50 @@
+.Card {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card1 {
+    height: auto;
+    max-width: 90%;
+    background-color: beige;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.card1 p {
+    padding-top: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.card1 button {
+    color: #EC4814;
+    font-size: 16px;
+    border: none;
+    padding-top: 10px;
+    background-color: beige;
+}
+
+.card1 button:hover {
+    border-bottom: 1px solid #EC4814;
+}
+
+.card1:hover {
+    border: 1px solid #EC4814;
+}
+.Card-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+@media (max-width: 870px){
+    .Card-div{
+        display: flex;
+        flex-direction: column;
+    }
+}

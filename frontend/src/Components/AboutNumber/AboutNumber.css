@@ -1,0 +1,18 @@
+.AboutNumber{
+    height: 253px;
+    background-color: beige;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+.aboutnumber-div1{
+    padding-top: 45px;
+    width: 220px;
+    height: 133px;
+    background-color: #EC4814;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}

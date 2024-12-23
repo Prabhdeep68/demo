@@ -1,0 +1,42 @@
+.Header{
+    padding-top: 180px;
+    text-align: center;
+}
+
+.Header-heading{
+    font-weight:lighter;
+    font-size: 80px;
+    color: #0E191E;
+}
+.header-head2{
+    font-size: 80px;
+    color: #0E191E;
+    font-weight: bolder;
+}
+.person{
+    padding-top: 80px;
+}
+@media (max-width: 1000px){
+    .Header-heading{
+        font-size: 60px;
+    }
+    .header-head2{
+        font-size: 60px;
+    }
+    .person img{
+        width: 500px;
+        height: 400px;
+    }
+}
+@media (max-width: 640px){
+    .Header-heading{
+        font-size: 40px;
+    }
+    .header-head2{
+        font-size: 40px;
+    }
+    .person img{
+        width: 300px;
+        height: 322px;
+    }
+}

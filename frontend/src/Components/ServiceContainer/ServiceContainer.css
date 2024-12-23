@@ -1,0 +1,44 @@
+
+.service-container-div{
+    
+  
+    margin-top: 250px;
+    
+}
+
+.service-container-div1{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 70px;
+    justify-content: space-between;
+
+}
+.service-container-div2{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    
+}
+.ServiceContainer{
+    height: 394px;
+    width: 410px;
+    background-color:beige;
+    border-radius: 30px;
+
+}
+.ServiceContainer img{
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.ServiceContainer h1{
+    margin-left: 30px;
+    margin-top: 25px;
+    color: #0E191E;
+}
+.ServiceContainer p{
+    margin-left: 30px;
+    margin-top: 30px;
+    color: #5b5b5b;
+    font-size: 20px;
+}
+

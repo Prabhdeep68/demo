@@ -1,0 +1,26 @@
+
+    
+
+
+.project-div{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 260px;
+    justify-content: space-between;
+}
+.project-div img{
+    
+    height: 520px;
+    width: 400px;
+}
+.project-div1{
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.project-div2{
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
